@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+   <!-- My CSS -->
+   <link rel="stylesheet" href="../assets/css/bundle.css">
+   <!-- Boostrap -->
+   <!-- <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.css"> -->
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- Google Font -->
+   <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+
+
+   <title>Warteg Companion</title>
+</head>
+
+<body>
+   <div id="app">
+      <header>
+         <!-- Navbar -->
+         <nav>
+            <ul class="logo-search">
+               <li>
+                  <a href="">
+                     <img id="logo" src="../assets/img/Logo_Warteg.png" alt="">
+                  </a>
+               </li>
+               <li>
+                  <input type="text" name="search-txt" class="search-txt" placeholder="Cari Warungmu!" />
+                  <a class="search-btn" href="#">
+                     <i class="fa fa-search"></i>
+                  </a>
+               </li>
+            </ul>
+            <ul class="nav-links">
+               <li>
+                  <a href="">Masuk</a>
+               </li>
+               <li>
+                  <a href="">Daftarkan Warungmu</a>
+               </li>
+            </ul>
+            <div class="burger">
+               <div class="line1"></div>
+               <div class="line2"></div>
+               <div class="line3"></div>
+            </div>
+         </nav>
+         <!-- End of navbar -->
+
+         <!-- Jumbotron -->
+         <div class="jumbotron">
+            <div class="container">
+               <div class="search-box">
+                  <div class="form">
+                     <p>Temukan warung makan favoritmu dengan mudah!</p><br>
+                  </div>
+                  <div class="form">
+                     <p>Kota</p>
+                     <div class="search-form">
+                        <i class="fa fa-search"></i>
+                        <input type="text" name="kota" class="fill" placeholder="Dimana Kamu Tinggal?" />
+                     </div>
+                  </div>
+                  <div class="form">
+                     <p>Kampus</p>
+                     <div class="search-form">
+                        <i class="fa fa-search"></i>
+                        <input type="text" name="kampus" class="fill" placeholder="Cari Kampus Kuliahmu" />
+                     </div>
+                  </div>
+                  <div class="search-form-part">
+                     <div class="form">
+                        <p>Jenis Warung</p>
+                        <div class="form-part">
+                           <i class="fa fa-search"></i>
+                           <input type="text" name="warung" class="fill" placeholder="Warteg atau Warmindo" />
+                        </div>
+                     </div>
+                     <div class="form">
+                        <p>Jam Buka</p>
+                        <div class="form-part">
+                           <i class="fa fa-search"></i>
+                           <input type="text" name="jam" class="fill" placeholder="Pagi-Siang" />
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form">
+                     <div class="slider-harga">
+                        <span style="color:black;">
+                           <span id="myValue"></span>
+                        </span>
+                        <input type="range" id="myRange" max="50000" min="0" step="1000">
+                     </div>
+                  </div>
+                  <div class="form">
+                     <button type="button" class="btn btn-search">Cari</button>
+                  </div>
+               </div>
+               <div class="headline">
+                  <h1>Makan Sepuasmu Tanpa Ragu</h1>
+                  <p>
+                     Sekarang tak perlu khawatir dompet jebol, semua menu sudah tersedia di Warteg Companion
+                  </p>
+               </div>
+            </div>
+         </div>
+         <!-- End of Jumbotron -->
+
+      </header>
+      <section>
+         <div class="content">
+            <img class="content-img" src="../assets/img/Logo_Warteg_2.png" alt="">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+               industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+               and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+               leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+               with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+               publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+         </div>
+      </section>
+      <footer>
+         <div class="footer">
+            <p>© 2019 Warteg Companion All Rights Reserved</p>
+         </div>
+      </footer>
+   </div>
+
+   <!-- Responsive Navbar -->
+   <script src="../assets/js/navbar.js"></script>
+   <script src="../assets/js/slider.js"></script>
+</body>
+
+</html>
