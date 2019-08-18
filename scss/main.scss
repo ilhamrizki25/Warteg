@@ -414,15 +414,95 @@ section {
 // Result Page
 
 .search-content {
-   width: 100%;
+   width: 80%;
    display: flex;
    justify-content: center;
    margin: 20px 0;
+   display: flex;
+   flex-direction: column;
+
+   h1 {
+      text-transform: capitalize;
+      font-size: 36px;
+      font-weight: bold;
+   }
+}
+
+.result-search {
+   display: flex;
+   margin: 30px 0 0 15px;
+   flex-direction: column;
+   text-align: left;
+
+   .label {
+
+      display: flex;
+      flex-wrap: wrap;
+
+      h3 {
+         margin-right: 10px;
+         margin-top: 10px;
+         padding: 10px;
+         border: 1px solid rgb(92, 92, 92);
+         border-radius: 10px;
+         font-size: 16px;
+         text-transform: capitalize;
+      }
+   }
+
+   .container-card-result {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      width: 100%;
+
+      .card-menu {
+         padding: 15px;
+         // border: 1px solid black;
+         display: flex;
+         flex-direction: column;
+         align-content: space-between;
+         justify-content: space-between;
+         border-radius: 20px;
+         box-shadow: -2px 3px 7px 0px rgba(0, 0, 0, 0.4);
+         width: 300px;
+         height: 300px;
+         margin: 10px;
+
+         img {
+            border-radius: 10px;
+            width: 100%;
+            height: 75%;
+         }
+
+         .detail-harga {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 25%;
+            margin-top: 5px;
+            padding: 0 4px;
+
+            :nth-child(2) {
+               font-size: 10px;
+               margin: 8px 0;
+            }
+
+            :nth-child(3) {
+               text-align: right;
+            }
+
+            p {
+               text-transform: capitalize;
+            }
+         }
+      }
+   }
 }
 
 .advanced-search {
    display: flex;
-   width: 85%;
+   width: 100%;
    justify-content: space-between;
 
 
@@ -551,6 +631,46 @@ section {
    }
 }
 
+//menu 
+.container-card {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   width: 100%;
+
+   .card-menu {
+      padding: 15px;
+      // border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      align-content: space-between;
+      justify-content: space-between;
+      border-radius: 20px;
+      box-shadow: -2px 3px 7px 0px rgba(0, 0, 0, 0.4);
+      width: 250px;
+      height: 250px;
+      margin: 10px;
+
+      img {
+         border-radius: 10px;
+         width: 100%;
+         height: 80%;
+      }
+
+      .detail-harga {
+         display: flex;
+         justify-content: space-between;
+         height: 20%;
+         margin-top: 5px;
+         padding: 0 4px;
+
+         p {
+            font-weight: bold;
+         }
+      }
+   }
+}
+
 
 @media screen and (min-width:1920px) {
    #app {
@@ -640,7 +760,33 @@ section {
    .detail {
       margin-top: 100px;
    }
+
+   .detailed-content {
+      .picture {
+         display: flex;
+         justify-content: space-between;
+         height: 300px;
+      }
+   }
+
+   .card-menu {
+      width: 165px !important;
+      height: 165px !important;
+      padding: 10px !important;
+
+      p {
+         font-size: 12px;
+      }
+   }
+
+   .container-card-result {
+      .card-menu {
+         width: 220px !important;
+         height: 260px !important;
+      }
+   }
 }
+
 
 @media screen and (max-width:768px) {
 
@@ -666,6 +812,39 @@ section {
    .content {
       flex-direction: column;
    }
+
+   .detailed-content {
+      .picture {
+         display: flex;
+         justify-content: space-between;
+         height: 250px;
+      }
+   }
+
+   .card-menu {
+      width: 120px !important;
+      height: 140px !important;
+
+      img {
+         height: 70% !important;
+      }
+
+      .detail-harga {
+         height: 30% !important;
+         flex-direction: column;
+
+         p {
+            line-height: 12px;
+         }
+      }
+   }
+
+   .container-card-result {
+      .card-menu {
+         width: 180px !important;
+         height: 200px !important;
+      }
+   }
 }
 
 @media screen and (max-width: 575px) {
@@ -673,6 +852,18 @@ section {
       width: 180px !important;
    }
 
+   .advanced-search {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .detailed-content {
+      .picture {
+         display: flex;
+         justify-content: space-between;
+         height: 180px;
+      }
+   }
 }
 
 .search-box {
